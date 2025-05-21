@@ -16,9 +16,24 @@ body {
   top: 50%;
   transform: translate(-50%, -50%);
   position: absolute;
+  background: none;
+  overflow: hidden;
+}
+
+#game::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
   background-image: url("background_pong.jpg");
   background-size: cover;
+  background-position: center;
   opacity: 0.5;
+  z-index: 0;
+}
+
+#game > * {
+  position: relative;
+  z-index: 1; 
 }
 
 #left-paddle {
