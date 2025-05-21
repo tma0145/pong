@@ -9,7 +9,6 @@ body {
   margin: 0;
   background-color: #F3C1D2;
 }
-
 #game {
   margin: 4px;
   border: 5px solid #685068;
@@ -17,11 +16,21 @@ body {
   top: 50%;
   transform: translate(-50%, -50%);
   position: absolute;
-  background-image: url("background_pong.jpg");
-  background-size: cover;
-  opacity: 0.5;
+  overflow: hidden;
 }
 
+#game::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url("background_pong.jpg") no-repeat center center;
+  background-size: cover;
+  opacity: 0.5;
+  z-index: -1;
+}
 #left-paddle {
   background-color: #EF90B7;
   left: 10px;
