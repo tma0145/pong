@@ -32,13 +32,13 @@ body {
   z-index: -1;
 }
 #left-paddle {
-  background-color: #EF90B7;
+  background-color: #5F455F;
   left: 10px;
   height: 25px;
 }
 
 #right-paddle {
-  background-color: #ACB8CC;
+  background-color: #D61F6B;
   right: 10px;
  
   
