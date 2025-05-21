@@ -34,7 +34,7 @@ body {
 }
 
 #instructions {
-  /* display: none; */
+  display: none;
   bottom: 0;
   position: absolute;
   margin: 10px;
@@ -92,7 +92,7 @@ body {
   position: absolute;
   font-family: Arial, Helvetica, sans-serif;
   top: 0;
-  background-color: #685068;
+  color: #685068
 }
 
 #left-score {
