@@ -48,7 +48,7 @@ soundArray.push(wallSound); //add sound to list of sounds
 
 export var paddleSound = new soundFile("mixkit-golf-ball-bouncing-2075.mp3");
 soundArray.push(paddleSound);
-
+ 
 export var scoreSound = new soundFile("silence.mp3");
 soundArray.push(scoreSound);
 
@@ -56,6 +56,7 @@ export var ambientSound = new soundFile("birds.mp3");
 soundArray.push(ambientSound);
 ambientSound.player.loop = true; //turn on looping
 ambientSound.player.volume.value = -10; //turn down volume
+ambientSound.play();
 
 export var adventureMusic = new soundFile("silence.mp3");
 soundArray.push(adventureMusic);
